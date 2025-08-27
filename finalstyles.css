@@ -1,0 +1,429 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #e4dbd4;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header */
+#header {
+  background-color: #1f511a;
+  color: #fff;
+  padding: 20px 0;
+}
+
+#header .logo a {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 700;
+  padding-left: 20px;
+}
+
+#navbar ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#navbar ul li {
+  position: relative;
+  text-align: center;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.active {
+  color: #1f511a;
+}
+
+#navbar ul li .dropdown ul {
+  display: none;
+  position: absolute;
+  background-color: #1f511a;
+  top: 100%;
+  left: 0;
+  padding: 10px;
+}
+
+#navbar ul li:hover .dropdown ul {
+  display: block;
+}
+
+#navbar ul li .dropdown ul li {
+  padding: 8px 12px;
+}
+
+#navbar ul li .dropdown ul li a {
+  color: #fff;
+}
+
+#navbar ul li .dropdown ul li a:hover {
+  color: #1f511a;
+}
+
+/* Hero Section */
+#hero {
+  width: 100%;
+  height: 80vh;
+  background: url("img/Theater.jpg") top left;
+  background-size: cover;
+  position: relative;
+  text-align: left;
+  padding: 120px;
+}
+
+#hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+#hero h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.btn-get-started {
+  background-color: #1f511a;
+  color: #eeeaea;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-weight: 700;
+  transition: background-color 0.3s;
+}
+
+.btn-get-started:hover {
+  background-color: #467053;
+}
+
+/* About Section */
+#about {
+  padding: 50px 50px;
+  background-color: #cbdfce;
+}
+
+#about .section-title {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+#about .section-title h2 {
+  font-size: 36px;
+  color: #333333;
+}
+
+#about .section-title p {
+  font-size: 16px;
+  color: #777;
+}
+
+.about-cols {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.about-col {
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+.about-col img {
+  width: 140px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.about-col h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.about-col a {
+  font-size: 16px;
+  color: #1f511a;
+}
+
+#about div p {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.6;
+  text-align: left;
+  margin-top: 40px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about div p br {
+  margin-bottom: 20px;
+}
+
+/* Movies Section */
+#movies {
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+#movies .section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#movies .section-title h2 {
+  font-size: 36px;
+  color: #333;
+}
+
+#movies .section-title h3 {
+  font-size: 24px;
+  color: #777;
+}
+
+#movies-flters {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#movies-flters li {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #1f511a;
+  color: #fff;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+  margin-bottom: 20px;
+}
+
+#movies-flters li:hover {
+  background-color: #467053;
+}
+
+#movies-flters li.filter-active {
+  background-color: #467053;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.movies-item {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 30%;
+  margin-bottom: 15px;
+  position: relative;
+  height: 100%;
+}
+
+.movies-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movies-info {
+  padding: 10px;
+  text-align: center;
+}
+
+.movies-info h4 {
+  font-size: 18px;
+  color: #333;
+}
+
+.movies-info a {
+  font-size: 16px;
+  color: #1f511a;
+  transition: color 0.3s;
+}
+
+.movies-info a:hover {
+  color: #467053;
+}
+
+/* Movies Page Section*/
+#movies-details {
+  margin: 50px 100px;
+}
+
+.movies-details .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+
+.movies-details {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.movies-details-img {
+  width: 400px;
+  height: 500px;
+  flex-shrink: 0;
+}
+
+.movies-details-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.movies-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.movies-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #1f511a;
+}
+
+.movies-info ul {
+  font-size: 1rem;
+  color: #1f511a;
+}
+
+.movies-info li {
+  margin-bottom: 5px;
+  color: #1f511a;
+}
+
+/* My Mood Section */
+#mymood {
+    padding: 50px 50px;
+    background-color: #cbdfce;
+}
+
+#mymood .section-title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#mymood .section-title h2 {
+    font-size: 36px;
+    color: #333333;
+}
+
+
+/* Review Section */
+#review {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+#review .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#review .section-title h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.review-box {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Recommend Section */
+#recommend {
+  background: #1f511a;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.form {
+  max-width: 500px;
+  margin: auto;
+}
+
+.form input, .form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.form button {
+  background: #3b8934;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background: #467053;
+}
+
+/* ============================= */
+/* Footer */
+/* ============================= */
+#footer {
+  background: #467053;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-links a {
+  color: #f39c12;
+  margin: 0 10px;
+  font-size: 20px;
+}

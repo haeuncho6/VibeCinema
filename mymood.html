@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Mood</title>
+  <link rel="stylesheet" href="finalstyles.css" />
+</head>
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <h1 class="logo"><a href="index.html">VibeCinema</a></h1>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="about us.html">About</a></li>
+                    <li class="dropdown"><a href="movies.html"><span>Movies</span>
+                    <li><a class="nav-link scrollto" href="mymood.html">Mood</a></li>
+                    <li><a class="nav-link scrollto" href="review.html">Reviews</a></li>
+                    <li><a class="nav-link scrollto" href="#recommend">Recommend</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <div class="section-title" style="text-align: center; padding: 40px; color: #333;">
+        <h2>Get a Movie Recommendation</h2>
+        <p>Choose your mood and get the perfect movie recommendation just for you!</p>
+    </div>
+
+    <main style="text-align: center; padding: 40px; color: #333;">
+        <label for="mood-select">Choose your mood:</label>
+        <select id="mood-select">
+            <option value="">-- Select --</option>
+            <option value="happy">Happy</option>
+            <option value="sad">Sad</option>
+            <option value="romantic">Romantic</option>
+            <option value="funny">Funny</option>
+        </select>
+        <button onclick="recommendMovie()">Recommend</button>
+        <p id="recommendation" style="font-weight:bold;margin-top:20px;"></p>
+    </main>
+    <script src="mood-recommend.js"></script>
+</body>
+</html>
